@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "932160520404",
+    "project_id": "kujuo-e0db6",
+    "storage_bucket": "kujuo-e0db6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932160520404:android:14633678da14c3d239fb41",
+        "android_client_info": {
+          "package_name": "com.werollapayment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932160520404-v0a8negghensb82lngdq9f22nlngf0pa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.werollapayment",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "932160520404-ms7aead7usq1pr1f14sp5ii54fa88jn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlASCFOGJwxHctOvcL90KiG084rrGzLVk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932160520404-ms7aead7usq1pr1f14sp5ii54fa88jn3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
