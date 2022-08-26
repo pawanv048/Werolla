@@ -69,60 +69,61 @@
 
 
 
-import React, { useState,useEffect  } from 'react';
-import { Button, TextInput } from 'react-native';
-import auth from '@react-native-firebase/auth';
+// import React, { useState,useEffect  } from 'react';
+// import { Button, TextInput } from 'react-native';
+// import auth from '@react-native-firebase/auth';
 
-function Home() {
-  // If null, no SMS has been sent
-  const [confirm, setConfirm] = useState(null);
+// function Home({navigation}) {
+//   // If null, no SMS has been sent
+//   const [confirm, setConfirm] = useState(null);
 
-  const [code, setCode] = useState('');
-
-
-  // Handle user state changes
-  function onAuthStateChanged(user) {
-    console.log(user,'user')
-  }
+//   const [code, setCode] = useState('');
 
 
-  useEffect(() => {
-    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    return subscriber; // unsubscribe on unmount
-  }, []);
+//   // Handle user state changes
+//   function onAuthStateChanged(user) {
+//     console.log(user,'user')
+//   }
 
-  // Handle the button press
-  async function signInWithPhoneNumber(phoneNumber) {
-    const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
-    setConfirm(confirmation);
-  }
 
-  async function confirmCode() {
-    try {
-      await confirm.confirm(code);
-    } catch (error) {
-      console.log('Invalid code.');
-    }
-  }
+//   useEffect(() => {
+//     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+//     return subscriber; // unsubscribe on unmount
+//   }, []);
 
-  if (!confirm) {
-    return (
-      <Button
-        title="Phone Number Sign In"
-        onPress={() => signInWithPhoneNumber('+917710622979')}
-      />
-    );
-  }
+//   // Handle the button press
+//   async function signInWithPhoneNumber(phoneNumber) {
+//     const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
+//     setConfirm(confirmation);
+//   }
 
-  return (
-    <>
-      <TextInput value={code} onChangeText={text => setCode(text)} />
-      <Button title="Confirm Code" onPress={() => confirmCode()} />
-    </>
-  );
-}
+//   async function confirmCode() {
+//     try {
+//       await confirm.confirm(code);
+//     } catch (error) {
+//       console.log('Invalid code.');
+//     }
+//   }
 
-export default Home;
+//   if (!confirm) {
+//     return (
+//       <Button
+//         title="Phone Number Sign In"
+//         onPress={() => signInWithPhoneNumber('+917710622979')}
+//       />
+//     );
+//   }
+
+//   return (
+//     <>
+//       <TextInput value={code} onChangeText={text => setCode(text)} />
+//       <Button title="Confirm Code" onPress={() => confirmCode()} />
+     
+//     </>
+//   );
+// }
+
+// export default Home;
 
 
 
@@ -260,3 +261,17 @@ export default Home;
 // })
 
 
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const Home = () => {
+  return (
+    <View>
+      <Text>home</Text>
+    </View>
+  )
+}
+
+export default Home
+
+const styles = StyleSheet.create({})

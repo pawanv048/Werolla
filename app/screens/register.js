@@ -39,6 +39,10 @@ const Register = ({ navigation }) => {
   const [loading, setLoading] = useState(false)
   const [isRegistraionSuccess, setIsRegistraionSuccess] = useState(false)
 
+  const [user, setUser] = useState();
+  const [code, setCode] = useState('');
+  const [confirm, setConfirm] = useState(null);
+
   const [inputs, setInputs] = useState({
     yourName: '',
     email: '',
@@ -46,6 +50,37 @@ const Register = ({ navigation }) => {
     password: '',
   });
 
+  // Handle user state changes
+  function onAuthStateChanged(user) {
+    setUser(user);
+    if (initializing) setInitializing(false);
+  }
+
+  React.useEffect(() => {
+    const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    return subscriber; // unsubscribe on unmount
+  }, []);
+
+  // Handle the verify phone button press
+  async function verifyPhoneNumber(phoneNumber) {
+    const confirmation = await auth().verifyPhoneNumber(phoneNumber);
+    setConfirm(confirmation);
+  }
+
+  // Handle confirm code button press
+  async function confirmCode() {
+    try {
+      const credential = auth.PhoneAuthProvider.credential(confirm.verificationId, code);
+      let userData = await auth().currentUser.linkWithCredential(credential);
+      setUser(userData.user);
+    } catch (error) {
+      if (error.code == 'auth/invalid-verification-code') {
+        console.log('Invalid code.');
+      } else {
+        console.log('Account linking error');
+      }
+    }
+  }
 
   const postDataUserDetail = async () => {
     var form = new FormData();
@@ -64,7 +99,12 @@ const Register = ({ navigation }) => {
         if (response.status) {
           // navigation.navigate('login')
           setModelVisible(true)
-          console.log('Registration Successful. Please Login to proceed')
+          if (!confirm) {
+            console.log(inputs.phone)
+            verifyPhoneNumber('+91'+inputs.phone)
+
+          }
+          //console.log('Registration Successful. Please Login to proceed')
         } else {
           console.log(response.message)
         }
@@ -126,6 +166,7 @@ const Register = ({ navigation }) => {
       }
     }, 3000)
   };
+
 
   const [errors, setErrors] = useState({});
 
@@ -260,6 +301,9 @@ const Register = ({ navigation }) => {
 
     const onChangeText = (val) => {
       setInternalValue(val)
+      if (val.length === lengthInput) {
+        navigation.navigate('home')
+      }
     }
 
     // React.useEffect(() => {
@@ -278,31 +322,31 @@ const Register = ({ navigation }) => {
           <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
             <View
               style={{
-                height: 600,
+                height: SIZES.height * 0.9,
                 width: SIZES.width * 0.75,
                 backgroundColor: 'white',
                 borderRadius: SIZES.radius
               }}
             >
               <View style={{ alignItems: 'center' }}>
-                <Image source={images.verify} 
-                style={{ 
-                  width: 120, 
-                  height: 120, 
-                  backgroundColor: 'white', 
-                  marginVertical: 25 
-                }} />
-                <Text 
-                style={{ 
-                  fontWeight: 'bold', 
-                  color: 'black', 
-                  fontSize: 18 
+                <Image source={images.verify}
+                  style={{
+                    width: 120,
+                    height: 120,
+                    backgroundColor: 'white',
+                    marginVertical: 25
+                  }} />
+                <Text
+                  style={{
+                    fontWeight: 'bold',
+                    color: 'black',
+                    fontSize: 18
                   }}>Verification</Text>
-                <Text 
-                style={{ 
-                  padding: 10, 
-                  marginHorizontal: 30, 
-                  textAlign: 'center' 
+                <Text
+                  style={{
+                    padding: 10,
+                    marginHorizontal: 30,
+                    textAlign: 'center'
                   }}>Enter 6 digit code sent to your phone number</Text>
               </View>
 
@@ -310,8 +354,8 @@ const Register = ({ navigation }) => {
                 <TextInput
                   ref={(input) => textInput = input}
                   onChangeText={onChangeText}
-                  style={{ width: 0, height: 0 }}
-                  value={internalVal}  
+                  // style={{ width: 0, height: 0 }}
+                  value={internalVal}
                   maxLength={lengthInput}
                   returnKeyType="done"
                   keyboardType='numeric'
@@ -342,7 +386,8 @@ const Register = ({ navigation }) => {
                   <Text style={{ color: 'white' }}>Resend Code</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={styles.verifyBtn}
-                //onPress={() => confirmCode()}
+                   onPress={() => confirmCode()}
+                  //onPress={() => setShowSuccessModel(true)}
                 >
                   <Text style={{ color: 'white', fontSize: 20 }}>Verify</Text>
                 </TouchableOpacity>
@@ -354,8 +399,64 @@ const Register = ({ navigation }) => {
     )
   };
 
+  const [showSuccessModal, setShowSuccessModel] = useState(false)
 
-  
+  function renderSuccessModel() {
+    return (
+      <Modal
+        animationType='fade'
+        transparent={true}
+        visible={showSuccessModal}
+      >
+        <TouchableWithoutFeedback
+          onPress={() => setShowSuccessModel(false)}
+        >
+          <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+            <View style={{
+              height: 350,
+              width: SIZES.width * 0.6,
+              backgroundColor: '#E8F9FD',
+              borderRadius: SIZES.radius
+            }}>
+              <View style={{ alignItems: 'center', marginTop: 20 }}>
+                <Image
+                  source={images.succes}
+                  style={{
+                    height: 100,
+                    width: 100,
+                  }}
+                />
+              </View>
+              <View style={{ alignItems: 'center' }}>
+                <Text style={{ paddingVertical: 10, color: 'black' }}>Done</Text>
+                <Text 
+                  style={{ 
+                    textAlign: 'center',
+                    fontSize: 14,
+                    paddingHorizontal: 15 
+                    }}>
+                      You Have Successfully Completed your registration.
+                    </Text>
+              </View>
+
+              <TouchableOpacity
+                style={styles.loginbtn}
+                onPress={() => navigation.navigate('login')}
+              >
+                <Text style={{
+                  color: 'black',
+                  fontWeight: '600'
+                }}>
+                  Login
+                </Text>
+              </TouchableOpacity>
+            </View>
+          </View>
+        </TouchableWithoutFeedback>
+      </Modal>
+    )
+  };
+
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
@@ -363,6 +464,7 @@ const Register = ({ navigation }) => {
       {renderHeader()}
       {renderRegisterForm()}
       {renderOtpModel()}
+      {renderSuccessModel()}
     </SafeAreaView>
 
   )
@@ -405,11 +507,11 @@ const styles = StyleSheet.create({
   },
   cellView: {
     paddingVertical: 11,
-    width: 30,
+    width: 27,
     margin: 5,
     justifyContent: 'center',
     alignItems: 'center',
-    borderBottomWidth: 2.5,
+    borderBottomWidth: 2,
   },
   cellText: {
     textAlign: 'center',
@@ -431,8 +533,15 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     elevation: 5,
     marginTop: 10
+  },
+  loginbtn: {
+    backgroundColor: "#DA9F46",
+    borderRadius: 8,
+    elevation: 5,
+    marginTop: 80,
+    alignItems: 'center',
+    paddingVertical: 13,
+    marginHorizontal: 15
   }
 
 })
-
-
