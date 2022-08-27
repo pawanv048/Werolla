@@ -7,6 +7,8 @@ import CheckBox from '@react-native-community/checkbox';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Strings from '../constant/strings';
 import Loader from '../custom/Loader';
+import Toast from 'react-native-simple-toast';
+
 import {
   StyleSheet,
   Text,
@@ -24,12 +26,14 @@ import {
 
 const Login = ({ navigation }) => {
 
-  const [password, setPassword] = useState('');
+  // let uname = localPhoneValue || '';
+  // let upassword = localPasswordValue || '';
+  const [password, setPassword] = useState();
   const [toggleCheckBox, setToggleCheckBox] = useState(false)
   const [loading, setLoading] = useState(false)
   const [inputs, setInputs] = useState({
     phone: '',
-    password: ''
+    password: '',
   })
 
 

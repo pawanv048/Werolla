@@ -1,0 +1,1436 @@
+[
+  {
+    "iso": "AF",
+    "nicename": "Afghanistan",
+    "phonecode": 93,
+    "title": "🇦🇫 +93 Afghanistan (AF)"
+  },
+  {
+    "iso": "AL",
+    "nicename": "Albania",
+    "phonecode": 355,
+    "title": "🇦🇱 +355 Albania (AL)"
+  },
+  {
+    "iso": "DZ",
+    "nicename": "Algeria",
+    "phonecode": 213,
+    "title": "🇩🇿 +213 Algeria (DZ)"
+  },
+  {
+    "iso": "AS",
+    "nicename": "American Samoa",
+    "phonecode": 1684,
+    "title": "🇦🇸 +1684 American Samoa (AS)"
+  },
+  {
+    "iso": "AD",
+    "nicename": "Andorra",
+    "phonecode": 376,
+    "title": "🇦🇩 +376 Andorra (AD)"
+  },
+  {
+    "iso": "AO",
+    "nicename": "Angola",
+    "phonecode": 244,
+    "title": "🇦🇴 +244 Angola (AO)"
+  },
+  {
+    "iso": "AI",
+    "nicename": "Anguilla",
+    "phonecode": 1264,
+    "title": "🇦🇮 +1264 Anguilla (AI)"
+  },
+  {
+    "iso": "AQ",
+    "nicename": "Antarctica",
+    "phonecode": 0,
+    "title": "🇦🇶 +0 Antarctica (AQ)"
+  },
+  {
+    "iso": "AG",
+    "nicename": "Antigua and Barbuda",
+    "phonecode": 1268,
+    "title": "🇦🇬 +1268 Antigua and Barbuda (AG)"
+  },
+  {
+    "iso": "AR",
+    "nicename": "Argentina",
+    "phonecode": 54,
+    "title": "🇦🇷 +54 Argentina (AR)"
+  },
+  {
+    "iso": "AM",
+    "nicename": "Armenia",
+    "phonecode": 374,
+    "title": "🇦🇲 +374 Armenia (AM)"
+  },
+  {
+    "iso": "AW",
+    "nicename": "Aruba",
+    "phonecode": 297,
+    "title": "🇦🇼 +297 Aruba (AW)"
+  },
+  {
+    "iso": "AU",
+    "nicename": "Australia",
+    "phonecode": 61,
+    "title": "🇦🇺 +61 Australia (AU)"
+  },
+  {
+    "iso": "AT",
+    "nicename": "Austria",
+    "phonecode": 43,
+    "title": "🇦🇹 +43 Austria (AT)"
+  },
+  {
+    "iso": "AZ",
+    "nicename": "Azerbaijan",
+    "phonecode": 994,
+    "title": "🇦🇿 +994 Azerbaijan (AZ)"
+  },
+  {
+    "iso": "BS",
+    "nicename": "Bahamas",
+    "phonecode": 1242,
+    "title": "🇧🇸 +1242 Bahamas (BS)"
+  },
+  {
+    "iso": "BH",
+    "nicename": "Bahrain",
+    "phonecode": 973,
+    "title": "🇧🇭 +973 Bahrain (BH)"
+  },
+  {
+    "iso": "BD",
+    "nicename": "Bangladesh",
+    "phonecode": 880,
+    "title": "🇧🇩 +880 Bangladesh (BD)"
+  },
+  {
+    "iso": "BB",
+    "nicename": "Barbados",
+    "phonecode": 1246,
+    "title": "🇧🇧 +1246 Barbados (BB)"
+  },
+  {
+    "iso": "BY",
+    "nicename": "Belarus",
+    "phonecode": 375,
+    "title": "🇧🇾 +375 Belarus (BY)"
+  },
+  {
+    "iso": "BE",
+    "nicename": "Belgium",
+    "phonecode": 32,
+    "title": "🇧🇪 +32 Belgium (BE)"
+  },
+  {
+    "iso": "BZ",
+    "nicename": "Belize",
+    "phonecode": 501,
+    "title": "🇧🇿 +501 Belize (BZ)"
+  },
+  {
+    "iso": "BJ",
+    "nicename": "Benin",
+    "phonecode": 229,
+    "title": "🇧🇯 +229 Benin (BJ)"
+  },
+  {
+    "iso": "BM",
+    "nicename": "Bermuda",
+    "phonecode": 1441,
+    "title": "🇧🇲 +1441 Bermuda (BM)"
+  },
+  {
+    "iso": "BT",
+    "nicename": "Bhutan",
+    "phonecode": 975,
+    "title": "🇧🇹 +975 Bhutan (BT)"
+  },
+  {
+    "iso": "BO",
+    "nicename": "Bolivia",
+    "phonecode": 591,
+    "title": "🇧🇴 +591 Bolivia (BO)"
+  },
+  {
+    "iso": "BA",
+    "nicename": "Bosnia and Herzegovina",
+    "phonecode": 387,
+    "title": "🇧🇦 +387 Bosnia and Herzegovina (BA)"
+  },
+  {
+    "iso": "BW",
+    "nicename": "Botswana",
+    "phonecode": 267,
+    "title": "🇧🇼 +267 Botswana (BW)"
+  },
+  {
+    "iso": "BV",
+    "nicename": "Bouvet Island",
+    "phonecode": 0,
+    "title": "🇧🇻 +0 Bouvet Island (BV)"
+  },
+  {
+    "iso": "BR",
+    "nicename": "Brazil",
+    "phonecode": 55,
+    "title": "🇧🇷 +55 Brazil (BR)"
+  },
+  {
+    "iso": "IO",
+    "nicename": "British Indian Ocean Territory",
+    "phonecode": 246,
+    "title": "🇮🇴 +246 British Indian Ocean Territory (IO)"
+  },
+  {
+    "iso": "BN",
+    "nicename": "Brunei Darussalam",
+    "phonecode": 673,
+    "title": "🇧🇳 +673 Brunei Darussalam (BN)"
+  },
+  {
+    "iso": "BG",
+    "nicename": "Bulgaria",
+    "phonecode": 359,
+    "title": "🇧🇬 +359 Bulgaria (BG)"
+  },
+  {
+    "iso": "BF",
+    "nicename": "Burkina Faso",
+    "phonecode": 226,
+    "title": "🇧🇫 +226 Burkina Faso (BF)"
+  },
+  {
+    "iso": "BI",
+    "nicename": "Burundi",
+    "phonecode": 257,
+    "title": "🇧🇮 +257 Burundi (BI)"
+  },
+  {
+    "iso": "KH",
+    "nicename": "Cambodia",
+    "phonecode": 855,
+    "title": "🇰🇭 +855 Cambodia (KH)"
+  },
+  {
+    "iso": "CM",
+    "nicename": "Cameroon",
+    "phonecode": 237,
+    "title": "🇨🇲 +237 Cameroon (CM)"
+  },
+  {
+    "iso": "CA",
+    "nicename": "Canada",
+    "phonecode": 1,
+    "title": "🇨🇦 +1 Canada (CA)"
+  },
+  {
+    "iso": "CV",
+    "nicename": "Cape Verde",
+    "phonecode": 238,
+    "title": "🇨🇻 +238 Cape Verde (CV)"
+  },
+  {
+    "iso": "KY",
+    "nicename": "Cayman Islands",
+    "phonecode": 1345,
+    "title": "🇰🇾 +1345 Cayman Islands (KY)"
+  },
+  {
+    "iso": "CF",
+    "nicename": "Central African Republic",
+    "phonecode": 236,
+    "title": "🇨🇫 +236 Central African Republic (CF)"
+  },
+  {
+    "iso": "TD",
+    "nicename": "Chad",
+    "phonecode": 235,
+    "title": "🇹🇩 +235 Chad (TD)"
+  },
+  {
+    "iso": "CL",
+    "nicename": "Chile",
+    "phonecode": 56,
+    "title": "🇨🇱 +56 Chile (CL)"
+  },
+  {
+    "iso": "CN",
+    "nicename": "China",
+    "phonecode": 86,
+    "title": "🇨🇳 +86 China (CN)"
+  },
+  {
+    "iso": "CX",
+    "nicename": "Christmas Island",
+    "phonecode": 61,
+    "title": "🇨🇽 +61 Christmas Island (CX)"
+  },
+  {
+    "iso": "CC",
+    "nicename": "Cocos (Keeling) Islands",
+    "phonecode": 672,
+    "title": "🇨🇨 +672 Cocos (Keeling) Islands (CC)"
+  },
+  {
+    "iso": "CO",
+    "nicename": "Colombia",
+    "phonecode": 57,
+    "title": "🇨🇴 +57 Colombia (CO)"
+  },
+  {
+    "iso": "KM",
+    "nicename": "Comoros",
+    "phonecode": 269,
+    "title": "🇰🇲 +269 Comoros (KM)"
+  },
+  {
+    "iso": "CG",
+    "nicename": "Congo",
+    "phonecode": 242,
+    "title": "🇨🇬 +242 Congo (CG)"
+  },
+  {
+    "iso": "CD",
+    "nicename": "Congo, the Democratic Republic of the",
+    "phonecode": 242,
+    "title": "🇨🇩 +242 Congo, the Democratic Republic of the (CD)"
+  },
+  {
+    "iso": "CK",
+    "nicename": "Cook Islands",
+    "phonecode": 682,
+    "title": "🇨🇰 +682 Cook Islands (CK)"
+  },
+  {
+    "iso": "CR",
+    "nicename": "Costa Rica",
+    "phonecode": 506,
+    "title": "🇨🇷 +506 Costa Rica (CR)"
+  },
+  {
+    "iso": "CI",
+    "nicename": "Cote D'Ivoire",
+    "phonecode": 225,
+    "title": "🇨🇮 +225 Cote D'Ivoire (CI)"
+  },
+  {
+    "iso": "HR",
+    "nicename": "Croatia",
+    "phonecode": 385,
+    "title": "🇭🇷 +385 Croatia (HR)"
+  },
+  {
+    "iso": "CU",
+    "nicename": "Cuba",
+    "phonecode": 53,
+    "title": "🇨🇺 +53 Cuba (CU)"
+  },
+  {
+    "iso": "CY",
+    "nicename": "Cyprus",
+    "phonecode": 357,
+    "title": "🇨🇾 +357 Cyprus (CY)"
+  },
+  {
+    "iso": "CZ",
+    "nicename": "Czech Republic",
+    "phonecode": 420,
+    "title": "🇨🇿 +420 Czech Republic (CZ)"
+  },
+  {
+    "iso": "DK",
+    "nicename": "Denmark",
+    "phonecode": 45,
+    "title": "🇩🇰 +45 Denmark (DK)"
+  },
+  {
+    "iso": "DJ",
+    "nicename": "Djibouti",
+    "phonecode": 253,
+    "title": "🇩🇯 +253 Djibouti (DJ)"
+  },
+  {
+    "iso": "DM",
+    "nicename": "Dominica",
+    "phonecode": 1767,
+    "title": "🇩🇲 +1767 Dominica (DM)"
+  },
+  {
+    "iso": "DO",
+    "nicename": "Dominican Republic",
+    "phonecode": 1809,
+    "title": "🇩🇴 +1809 Dominican Republic (DO)"
+  },
+  {
+    "iso": "EC",
+    "nicename": "Ecuador",
+    "phonecode": 593,
+    "title": "🇪🇨 +593 Ecuador (EC)"
+  },
+  {
+    "iso": "EG",
+    "nicename": "Egypt",
+    "phonecode": 20,
+    "title": "🇪🇬 +20 Egypt (EG)"
+  },
+  {
+    "iso": "SV",
+    "nicename": "El Salvador",
+    "phonecode": 503,
+    "title": "🇸🇻 +503 El Salvador (SV)"
+  },
+  {
+    "iso": "GQ",
+    "nicename": "Equatorial Guinea",
+    "phonecode": 240,
+    "title": "🇬🇶 +240 Equatorial Guinea (GQ)"
+  },
+  {
+    "iso": "ER",
+    "nicename": "Eritrea",
+    "phonecode": 291,
+    "title": "🇪🇷 +291 Eritrea (ER)"
+  },
+  {
+    "iso": "EE",
+    "nicename": "Estonia",
+    "phonecode": 372,
+    "title": "🇪🇪 +372 Estonia (EE)"
+  },
+  {
+    "iso": "ET",
+    "nicename": "Ethiopia",
+    "phonecode": 251,
+    "title": "🇪🇹 +251 Ethiopia (ET)"
+  },
+  {
+    "iso": "FK",
+    "nicename": "Falkland Islands (Malvinas)",
+    "phonecode": 500,
+    "title": "🇫🇰 +500 Falkland Islands (Malvinas) (FK)"
+  },
+  {
+    "iso": "FO",
+    "nicename": "Faroe Islands",
+    "phonecode": 298,
+    "title": "🇫🇴 +298 Faroe Islands (FO)"
+  },
+  {
+    "iso": "FJ",
+    "nicename": "Fiji",
+    "phonecode": 679,
+    "title": "🇫🇯 +679 Fiji (FJ)"
+  },
+  {
+    "iso": "FI",
+    "nicename": "Finland",
+    "phonecode": 358,
+    "title": "🇫🇮 +358 Finland (FI)"
+  },
+  {
+    "iso": "FR",
+    "nicename": "France",
+    "phonecode": 33,
+    "title": "🇫🇷 +33 France (FR)"
+  },
+  {
+    "iso": "GF",
+    "nicename": "French Guiana",
+    "phonecode": 594,
+    "title": "🇬🇫 +594 French Guiana (GF)"
+  },
+  {
+    "iso": "PF",
+    "nicename": "French Polynesia",
+    "phonecode": 689,
+    "title": "🇵🇫 +689 French Polynesia (PF)"
+  },
+  {
+    "iso": "TF",
+    "nicename": "French Southern Territories",
+    "phonecode": 0,
+    "title": "🇹🇫 +0 French Southern Territories (TF)"
+  },
+  {
+    "iso": "GA",
+    "nicename": "Gabon",
+    "phonecode": 241,
+    "title": "🇬🇦 +241 Gabon (GA)"
+  },
+  {
+    "iso": "GM",
+    "nicename": "Gambia",
+    "phonecode": 220,
+    "title": "🇬🇲 +220 Gambia (GM)"
+  },
+  {
+    "iso": "GE",
+    "nicename": "Georgia",
+    "phonecode": 995,
+    "title": "🇬🇪 +995 Georgia (GE)"
+  },
+  {
+    "iso": "DE",
+    "nicename": "Germany",
+    "phonecode": 49,
+    "title": "🇩🇪 +49 Germany (DE)"
+  },
+  {
+    "iso": "GH",
+    "nicename": "Ghana",
+    "phonecode": 233,
+    "title": "🇬🇭 +233 Ghana (GH)"
+  },
+  {
+    "iso": "GI",
+    "nicename": "Gibraltar",
+    "phonecode": 350,
+    "title": "🇬🇮 +350 Gibraltar (GI)"
+  },
+  {
+    "iso": "GR",
+    "nicename": "Greece",
+    "phonecode": 30,
+    "title": "🇬🇷 +30 Greece (GR)"
+  },
+  {
+    "iso": "GL",
+    "nicename": "Greenland",
+    "phonecode": 299,
+    "title": "🇬🇱 +299 Greenland (GL)"
+  },
+  {
+    "iso": "GD",
+    "nicename": "Grenada",
+    "phonecode": 1473,
+    "title": "🇬🇩 +1473 Grenada (GD)"
+  },
+  {
+    "iso": "GP",
+    "nicename": "Guadeloupe",
+    "phonecode": 590,
+    "title": "🇬🇵 +590 Guadeloupe (GP)"
+  },
+  {
+    "iso": "GU",
+    "nicename": "Guam",
+    "phonecode": 1671,
+    "title": "🇬🇺 +1671 Guam (GU)"
+  },
+  {
+    "iso": "GT",
+    "nicename": "Guatemala",
+    "phonecode": 502,
+    "title": "🇬🇹 +502 Guatemala (GT)"
+  },
+  {
+    "iso": "GN",
+    "nicename": "Guinea",
+    "phonecode": 224,
+    "title": "🇬🇳 +224 Guinea (GN)"
+  },
+  {
+    "iso": "GW",
+    "nicename": "Guinea-Bissau",
+    "phonecode": 245,
+    "title": "🇬🇼 +245 Guinea-Bissau (GW)"
+  },
+  {
+    "iso": "GY",
+    "nicename": "Guyana",
+    "phonecode": 592,
+    "title": "🇬🇾 +592 Guyana (GY)"
+  },
+  {
+    "iso": "HT",
+    "nicename": "Haiti",
+    "phonecode": 509,
+    "title": "🇭🇹 +509 Haiti (HT)"
+  },
+  {
+    "iso": "HM",
+    "nicename": "Heard Island and Mcdonald Islands",
+    "phonecode": 0,
+    "title": "🇭🇲 +0 Heard Island and Mcdonald Islands (HM)"
+  },
+  {
+    "iso": "VA",
+    "nicename": "Holy See (Vatican City State)",
+    "phonecode": 39,
+    "title": "🇻🇦 +39 Holy See (Vatican City State) (VA)"
+  },
+  {
+    "iso": "HN",
+    "nicename": "Honduras",
+    "phonecode": 504,
+    "title": "🇭🇳 +504 Honduras (HN)"
+  },
+  {
+    "iso": "HK",
+    "nicename": "Hong Kong",
+    "phonecode": 852,
+    "title": "🇭🇰 +852 Hong Kong (HK)"
+  },
+  {
+    "iso": "HU",
+    "nicename": "Hungary",
+    "phonecode": 36,
+    "title": "🇭🇺 +36 Hungary (HU)"
+  },
+  {
+    "iso": "IS",
+    "nicename": "Iceland",
+    "phonecode": 354,
+    "title": "🇮🇸 +354 Iceland (IS)"
+  },
+  {
+    "iso": "IN",
+    "nicename": "India",
+    "phonecode": 91,
+    "title": "🇮🇳 +91 India (IN)"
+  },
+  {
+    "iso": "ID",
+    "nicename": "Indonesia",
+    "phonecode": 62,
+    "title": "🇮🇩 +62 Indonesia (ID)"
+  },
+  {
+    "iso": "IR",
+    "nicename": "Iran, Islamic Republic of",
+    "phonecode": 98,
+    "title": "🇮🇷 +98 Iran, Islamic Republic of (IR)"
+  },
+  {
+    "iso": "IQ",
+    "nicename": "Iraq",
+    "phonecode": 964,
+    "title": "🇮🇶 +964 Iraq (IQ)"
+  },
+  {
+    "iso": "IE",
+    "nicename": "Ireland",
+    "phonecode": 353,
+    "title": "🇮🇪 +353 Ireland (IE)"
+  },
+  {
+    "iso": "IL",
+    "nicename": "Israel",
+    "phonecode": 972,
+    "title": "🇮🇱 +972 Israel (IL)"
+  },
+  {
+    "iso": "IT",
+    "nicename": "Italy",
+    "phonecode": 39,
+    "title": "🇮🇹 +39 Italy (IT)"
+  },
+  {
+    "iso": "JM",
+    "nicename": "Jamaica",
+    "phonecode": 1876,
+    "title": "🇯🇲 +1876 Jamaica (JM)"
+  },
+  {
+    "iso": "JP",
+    "nicename": "Japan",
+    "phonecode": 81,
+    "title": "🇯🇵 +81 Japan (JP)"
+  },
+  {
+    "iso": "JO",
+    "nicename": "Jordan",
+    "phonecode": 962,
+    "title": "🇯🇴 +962 Jordan (JO)"
+  },
+  {
+    "iso": "KZ",
+    "nicename": "Kazakhstan",
+    "phonecode": 7,
+    "title": "🇰🇿 +7 Kazakhstan (KZ)"
+  },
+  {
+    "iso": "KE",
+    "nicename": "Kenya",
+    "phonecode": 254,
+    "title": "🇰🇪 +254 Kenya (KE)"
+  },
+  {
+    "iso": "KI",
+    "nicename": "Kiribati",
+    "phonecode": 686,
+    "title": "🇰🇮 +686 Kiribati (KI)"
+  },
+  {
+    "iso": "KP",
+    "nicename": "Korea, Democratic People's Republic of",
+    "phonecode": 850,
+    "title": "🇰🇵 +850 Korea, Democratic People's Republic of (KP)"
+  },
+  {
+    "iso": "KR",
+    "nicename": "Korea, Republic of",
+    "phonecode": 82,
+    "title": "🇰🇷 +82 Korea, Republic of (KR)"
+  },
+  {
+    "iso": "KW",
+    "nicename": "Kuwait",
+    "phonecode": 965,
+    "title": "🇰🇼 +965 Kuwait (KW)"
+  },
+  {
+    "iso": "KG",
+    "nicename": "Kyrgyzstan",
+    "phonecode": 996,
+    "title": "🇰🇬 +996 Kyrgyzstan (KG)"
+  },
+  {
+    "iso": "LA",
+    "nicename": "Lao People's Democratic Republic",
+    "phonecode": 856,
+    "title": "🇱🇦 +856 Lao People's Democratic Republic (LA)"
+  },
+  {
+    "iso": "LV",
+    "nicename": "Latvia",
+    "phonecode": 371,
+    "title": "🇱🇻 +371 Latvia (LV)"
+  },
+  {
+    "iso": "LB",
+    "nicename": "Lebanon",
+    "phonecode": 961,
+    "title": "🇱🇧 +961 Lebanon (LB)"
+  },
+  {
+    "iso": "LS",
+    "nicename": "Lesotho",
+    "phonecode": 266,
+    "title": "🇱🇸 +266 Lesotho (LS)"
+  },
+  {
+    "iso": "LR",
+    "nicename": "Liberia",
+    "phonecode": 231,
+    "title": "🇱🇷 +231 Liberia (LR)"
+  },
+  {
+    "iso": "LY",
+    "nicename": "Libyan Arab Jamahiriya",
+    "phonecode": 218,
+    "title": "🇱🇾 +218 Libyan Arab Jamahiriya (LY)"
+  },
+  {
+    "iso": "LI",
+    "nicename": "Liechtenstein",
+    "phonecode": 423,
+    "title": "🇱🇮 +423 Liechtenstein (LI)"
+  },
+  {
+    "iso": "LT",
+    "nicename": "Lithuania",
+    "phonecode": 370,
+    "title": "🇱🇹 +370 Lithuania (LT)"
+  },
+  {
+    "iso": "LU",
+    "nicename": "Luxembourg",
+    "phonecode": 352,
+    "title": "🇱🇺 +352 Luxembourg (LU)"
+  },
+  {
+    "iso": "MO",
+    "nicename": "Macao",
+    "phonecode": 853,
+    "title": "🇲🇴 +853 Macao (MO)"
+  },
+  {
+    "iso": "MK",
+    "nicename": "Macedonia, the Former Yugoslav Republic of",
+    "phonecode": 389,
+    "title": "🇲🇰 +389 Macedonia, the Former Yugoslav Republic of (MK)"
+  },
+  {
+    "iso": "MG",
+    "nicename": "Madagascar",
+    "phonecode": 261,
+    "title": "🇲🇬 +261 Madagascar (MG)"
+  },
+  {
+    "iso": "MW",
+    "nicename": "Malawi",
+    "phonecode": 265,
+    "title": "🇲🇼 +265 Malawi (MW)"
+  },
+  {
+    "iso": "MY",
+    "nicename": "Malaysia",
+    "phonecode": 60,
+    "title": "🇲🇾 +60 Malaysia (MY)"
+  },
+  {
+    "iso": "MV",
+    "nicename": "Maldives",
+    "phonecode": 960,
+    "title": "🇲🇻 +960 Maldives (MV)"
+  },
+  {
+    "iso": "ML",
+    "nicename": "Mali",
+    "phonecode": 223,
+    "title": "🇲🇱 +223 Mali (ML)"
+  },
+  {
+    "iso": "MT",
+    "nicename": "Malta",
+    "phonecode": 356,
+    "title": "🇲🇹 +356 Malta (MT)"
+  },
+  {
+    "iso": "MH",
+    "nicename": "Marshall Islands",
+    "phonecode": 692,
+    "title": "🇲🇭 +692 Marshall Islands (MH)"
+  },
+  {
+    "iso": "MQ",
+    "nicename": "Martinique",
+    "phonecode": 596,
+    "title": "🇲🇶 +596 Martinique (MQ)"
+  },
+  {
+    "iso": "MR",
+    "nicename": "Mauritania",
+    "phonecode": 222,
+    "title": "🇲🇷 +222 Mauritania (MR)"
+  },
+  {
+    "iso": "MU",
+    "nicename": "Mauritius",
+    "phonecode": 230,
+    "title": "🇲🇺 +230 Mauritius (MU)"
+  },
+  {
+    "iso": "YT",
+    "nicename": "Mayotte",
+    "phonecode": 269,
+    "title": "🇾🇹 +269 Mayotte (YT)"
+  },
+  {
+    "iso": "MX",
+    "nicename": "Mexico",
+    "phonecode": 52,
+    "title": "🇲🇽 +52 Mexico (MX)"
+  },
+  {
+    "iso": "FM",
+    "nicename": "Micronesia, Federated States of",
+    "phonecode": 691,
+    "title": "🇫🇲 +691 Micronesia, Federated States of (FM)"
+  },
+  {
+    "iso": "MD",
+    "nicename": "Moldova, Republic of",
+    "phonecode": 373,
+    "title": "🇲🇩 +373 Moldova, Republic of (MD)"
+  },
+  {
+    "iso": "MC",
+    "nicename": "Monaco",
+    "phonecode": 377,
+    "title": "🇲🇨 +377 Monaco (MC)"
+  },
+  {
+    "iso": "MN",
+    "nicename": "Mongolia",
+    "phonecode": 976,
+    "title": "🇲🇳 +976 Mongolia (MN)"
+  },
+  {
+    "iso": "MS",
+    "nicename": "Montserrat",
+    "phonecode": 1664,
+    "title": "🇲🇸 +1664 Montserrat (MS)"
+  },
+  {
+    "iso": "MA",
+    "nicename": "Morocco",
+    "phonecode": 212,
+    "title": "🇲🇦 +212 Morocco (MA)"
+  },
+  {
+    "iso": "MZ",
+    "nicename": "Mozambique",
+    "phonecode": 258,
+    "title": "🇲🇿 +258 Mozambique (MZ)"
+  },
+  {
+    "iso": "MM",
+    "nicename": "Myanmar",
+    "phonecode": 95,
+    "title": "🇲🇲 +95 Myanmar (MM)"
+  },
+  {
+    "iso": "NA",
+    "nicename": "Namibia",
+    "phonecode": 264,
+    "title": "🇳🇦 +264 Namibia (NA)"
+  },
+  {
+    "iso": "NR",
+    "nicename": "Nauru",
+    "phonecode": 674,
+    "title": "🇳🇷 +674 Nauru (NR)"
+  },
+  {
+    "iso": "NP",
+    "nicename": "Nepal",
+    "phonecode": 977,
+    "title": "🇳🇵 +977 Nepal (NP)"
+  },
+  {
+    "iso": "NL",
+    "nicename": "Netherlands",
+    "phonecode": 31,
+    "title": "🇳🇱 +31 Netherlands (NL)"
+  },
+  {
+    "iso": "AN",
+    "nicename": "Netherlands Antilles",
+    "phonecode": 599,
+    "title": "🇦🇳 +599 Netherlands Antilles (AN)"
+  },
+  {
+    "iso": "NC",
+    "nicename": "New Caledonia",
+    "phonecode": 687,
+    "title": "🇳🇨 +687 New Caledonia (NC)"
+  },
+  {
+    "iso": "NZ",
+    "nicename": "New Zealand",
+    "phonecode": 64,
+    "title": "🇳🇿 +64 New Zealand (NZ)"
+  },
+  {
+    "iso": "NI",
+    "nicename": "Nicaragua",
+    "phonecode": 505,
+    "title": "🇳🇮 +505 Nicaragua (NI)"
+  },
+  {
+    "iso": "NE",
+    "nicename": "Niger",
+    "phonecode": 227,
+    "title": "🇳🇪 +227 Niger (NE)"
+  },
+  {
+    "iso": "NG",
+    "nicename": "Nigeria",
+    "phonecode": 234,
+    "title": "🇳🇬 +234 Nigeria (NG)"
+  },
+  {
+    "iso": "NU",
+    "nicename": "Niue",
+    "phonecode": 683,
+    "title": "🇳🇺 +683 Niue (NU)"
+  },
+  {
+    "iso": "NF",
+    "nicename": "Norfolk Island",
+    "phonecode": 672,
+    "title": "🇳🇫 +672 Norfolk Island (NF)"
+  },
+  {
+    "iso": "MP",
+    "nicename": "Northern Mariana Islands",
+    "phonecode": 1670,
+    "title": "🇲🇵 +1670 Northern Mariana Islands (MP)"
+  },
+  {
+    "iso": "NO",
+    "nicename": "Norway",
+    "phonecode": 47,
+    "title": "🇳🇴 +47 Norway (NO)"
+  },
+  {
+    "iso": "OM",
+    "nicename": "Oman",
+    "phonecode": 968,
+    "title": "🇴🇲 +968 Oman (OM)"
+  },
+  {
+    "iso": "PK",
+    "nicename": "Pakistan",
+    "phonecode": 92,
+    "title": "🇵🇰 +92 Pakistan (PK)"
+  },
+  {
+    "iso": "PW",
+    "nicename": "Palau",
+    "phonecode": 680,
+    "title": "🇵🇼 +680 Palau (PW)"
+  },
+  {
+    "iso": "PS",
+    "nicename": "Palestinian Territory, Occupied",
+    "phonecode": 970,
+    "title": "🇵🇸 +970 Palestinian Territory, Occupied (PS)"
+  },
+  {
+    "iso": "PA",
+    "nicename": "Panama",
+    "phonecode": 507,
+    "title": "🇵🇦 +507 Panama (PA)"
+  },
+  {
+    "iso": "PG",
+    "nicename": "Papua New Guinea",
+    "phonecode": 675,
+    "title": "🇵🇬 +675 Papua New Guinea (PG)"
+  },
+  {
+    "iso": "PY",
+    "nicename": "Paraguay",
+    "phonecode": 595,
+    "title": "🇵🇾 +595 Paraguay (PY)"
+  },
+  {
+    "iso": "PE",
+    "nicename": "Peru",
+    "phonecode": 51,
+    "title": "🇵🇪 +51 Peru (PE)"
+  },
+  {
+    "iso": "PH",
+    "nicename": "Philippines",
+    "phonecode": 63,
+    "title": "🇵🇭 +63 Philippines (PH)"
+  },
+  {
+    "iso": "PN",
+    "nicename": "Pitcairn",
+    "phonecode": 0,
+    "title": "🇵🇳 +0 Pitcairn (PN)"
+  },
+  {
+    "iso": "PL",
+    "nicename": "Poland",
+    "phonecode": 48,
+    "title": "🇵🇱 +48 Poland (PL)"
+  },
+  {
+    "iso": "PT",
+    "nicename": "Portugal",
+    "phonecode": 351,
+    "title": "🇵🇹 +351 Portugal (PT)"
+  },
+  {
+    "iso": "PR",
+    "nicename": "Puerto Rico",
+    "phonecode": 1787,
+    "title": "🇵🇷 +1787 Puerto Rico (PR)"
+  },
+  {
+    "iso": "QA",
+    "nicename": "Qatar",
+    "phonecode": 974,
+    "title": "🇶🇦 +974 Qatar (QA)"
+  },
+  {
+    "iso": "RE",
+    "nicename": "Reunion",
+    "phonecode": 262,
+    "title": "🇷🇪 +262 Reunion (RE)"
+  },
+  {
+    "iso": "RO",
+    "nicename": "Romania",
+    "phonecode": 40,
+    "title": "🇷🇴 +40 Romania (RO)"
+  },
+  {
+    "iso": "RU",
+    "nicename": "Russian Federation",
+    "phonecode": 70,
+    "title": "🇷🇺 +70 Russian Federation (RU)"
+  },
+  {
+    "iso": "RW",
+    "nicename": "Rwanda",
+    "phonecode": 250,
+    "title": "🇷🇼 +250 Rwanda (RW)"
+  },
+  {
+    "iso": "SH",
+    "nicename": "Saint Helena",
+    "phonecode": 290,
+    "title": "🇸🇭 +290 Saint Helena (SH)"
+  },
+  {
+    "iso": "KN",
+    "nicename": "Saint Kitts and Nevis",
+    "phonecode": 1869,
+    "title": "🇰🇳 +1869 Saint Kitts and Nevis (KN)"
+  },
+  {
+    "iso": "LC",
+    "nicename": "Saint Lucia",
+    "phonecode": 1758,
+    "title": "🇱🇨 +1758 Saint Lucia (LC)"
+  },
+  {
+    "iso": "PM",
+    "nicename": "Saint Pierre and Miquelon",
+    "phonecode": 508,
+    "title": "🇵🇲 +508 Saint Pierre and Miquelon (PM)"
+  },
+  {
+    "iso": "VC",
+    "nicename": "Saint Vincent and the Grenadines",
+    "phonecode": 1784,
+    "title": "🇻🇨 +1784 Saint Vincent and the Grenadines (VC)"
+  },
+  {
+    "iso": "WS",
+    "nicename": "Samoa",
+    "phonecode": 684,
+    "title": "🇼🇸 +684 Samoa (WS)"
+  },
+  {
+    "iso": "SM",
+    "nicename": "San Marino",
+    "phonecode": 378,
+    "title": "🇸🇲 +378 San Marino (SM)"
+  },
+  {
+    "iso": "ST",
+    "nicename": "Sao Tome and Principe",
+    "phonecode": 239,
+    "title": "🇸🇹 +239 Sao Tome and Principe (ST)"
+  },
+  {
+    "iso": "SA",
+    "nicename": "Saudi Arabia",
+    "phonecode": 966,
+    "title": "🇸🇦 +966 Saudi Arabia (SA)"
+  },
+  {
+    "iso": "SN",
+    "nicename": "Senegal",
+    "phonecode": 221,
+    "title": "🇸🇳 +221 Senegal (SN)"
+  },
+  {
+    "iso": "RS",
+    "nicename": "Serbia and Montenegro",
+    "phonecode": 381,
+    "title": "🇷🇸 +381 Serbia and Montenegro (RS)"
+  },
+  {
+    "iso": "SC",
+    "nicename": "Seychelles",
+    "phonecode": 248,
+    "title": "🇸🇨 +248 Seychelles (SC)"
+  },
+  {
+    "iso": "SL",
+    "nicename": "Sierra Leone",
+    "phonecode": 232,
+    "title": "🇸🇱 +232 Sierra Leone (SL)"
+  },
+  {
+    "iso": "SG",
+    "nicename": "Singapore",
+    "phonecode": 65,
+    "title": "🇸🇬 +65 Singapore (SG)"
+  },
+  {
+    "iso": "SK",
+    "nicename": "Slovakia",
+    "phonecode": 421,
+    "title": "🇸🇰 +421 Slovakia (SK)"
+  },
+  {
+    "iso": "SI",
+    "nicename": "Slovenia",
+    "phonecode": 386,
+    "title": "🇸🇮 +386 Slovenia (SI)"
+  },
+  {
+    "iso": "SB",
+    "nicename": "Solomon Islands",
+    "phonecode": 677,
+    "title": "🇸🇧 +677 Solomon Islands (SB)"
+  },
+  {
+    "iso": "SO",
+    "nicename": "Somalia",
+    "phonecode": 252,
+    "title": "🇸🇴 +252 Somalia (SO)"
+  },
+  {
+    "iso": "ZA",
+    "nicename": "South Africa",
+    "phonecode": 27,
+    "title": "🇿🇦 +27 South Africa (ZA)"
+  },
+  {
+    "iso": "GS",
+    "nicename": "South Georgia and the South Sandwich Islands",
+    "phonecode": 0,
+    "title": "🇬🇸 +0 South Georgia and the South Sandwich Islands (GS)"
+  },
+  {
+    "iso": "ES",
+    "nicename": "Spain",
+    "phonecode": 34,
+    "title": "🇪🇸 +34 Spain (ES)"
+  },
+  {
+    "iso": "LK",
+    "nicename": "Sri Lanka",
+    "phonecode": 94,
+    "title": "🇱🇰 +94 Sri Lanka (LK)"
+  },
+  {
+    "iso": "SD",
+    "nicename": "Sudan",
+    "phonecode": 249,
+    "title": "🇸🇩 +249 Sudan (SD)"
+  },
+  {
+    "iso": "SR",
+    "nicename": "Suriname",
+    "phonecode": 597,
+    "title": "🇸🇷 +597 Suriname (SR)"
+  },
+  {
+    "iso": "SJ",
+    "nicename": "Svalbard and Jan Mayen",
+    "phonecode": 47,
+    "title": "🇸🇯 +47 Svalbard and Jan Mayen (SJ)"
+  },
+  {
+    "iso": "SZ",
+    "nicename": "Swaziland",
+    "phonecode": 268,
+    "title": "🇸🇿 +268 Swaziland (SZ)"
+  },
+  {
+    "iso": "SE",
+    "nicename": "Sweden",
+    "phonecode": 46,
+    "title": "🇸🇪 +46 Sweden (SE)"
+  },
+  {
+    "iso": "CH",
+    "nicename": "Switzerland",
+    "phonecode": 41,
+    "title": "🇨🇭 +41 Switzerland (CH)"
+  },
+  {
+    "iso": "SY",
+    "nicename": "Syrian Arab Republic",
+    "phonecode": 963,
+    "title": "🇸🇾 +963 Syrian Arab Republic (SY)"
+  },
+  {
+    "iso": "TW",
+    "nicename": "Taiwan, Province of China",
+    "phonecode": 886,
+    "title": "🇹🇼 +886 Taiwan, Province of China (TW)"
+  },
+  {
+    "iso": "TJ",
+    "nicename": "Tajikistan",
+    "phonecode": 992,
+    "title": "🇹🇯 +992 Tajikistan (TJ)"
+  },
+  {
+    "iso": "TZ",
+    "nicename": "Tanzania, United Republic of",
+    "phonecode": 255,
+    "title": "🇹🇿 +255 Tanzania, United Republic of (TZ)"
+  },
+  {
+    "iso": "TH",
+    "nicename": "Thailand",
+    "phonecode": 66,
+    "title": "🇹🇭 +66 Thailand (TH)"
+  },
+  {
+    "iso": "TL",
+    "nicename": "Timor-Leste",
+    "phonecode": 670,
+    "title": "🇹🇱 +670 Timor-Leste (TL)"
+  },
+  {
+    "iso": "TG",
+    "nicename": "Togo",
+    "phonecode": 228,
+    "title": "🇹🇬 +228 Togo (TG)"
+  },
+  {
+    "iso": "TK",
+    "nicename": "Tokelau",
+    "phonecode": 690,
+    "title": "🇹🇰 +690 Tokelau (TK)"
+  },
+  {
+    "iso": "TO",
+    "nicename": "Tonga",
+    "phonecode": 676,
+    "title": "🇹🇴 +676 Tonga (TO)"
+  },
+  {
+    "iso": "TT",
+    "nicename": "Trinidad and Tobago",
+    "phonecode": 1868,
+    "title": "🇹🇹 +1868 Trinidad and Tobago (TT)"
+  },
+  {
+    "iso": "TN",
+    "nicename": "Tunisia",
+    "phonecode": 216,
+    "title": "🇹🇳 +216 Tunisia (TN)"
+  },
+  {
+    "iso": "TR",
+    "nicename": "Turkey",
+    "phonecode": 90,
+    "title": "🇹🇷 +90 Turkey (TR)"
+  },
+  {
+    "iso": "TM",
+    "nicename": "Turkmenistan",
+    "phonecode": 7370,
+    "title": "🇹🇲 +7370 Turkmenistan (TM)"
+  },
+  {
+    "iso": "TC",
+    "nicename": "Turks and Caicos Islands",
+    "phonecode": 1649,
+    "title": "🇹🇨 +1649 Turks and Caicos Islands (TC)"
+  },
+  {
+    "iso": "TV",
+    "nicename": "Tuvalu",
+    "phonecode": 688,
+    "title": "🇹🇻 +688 Tuvalu (TV)"
+  },
+  {
+    "iso": "UG",
+    "nicename": "Uganda",
+    "phonecode": 256,
+    "title": "🇺🇬 +256 Uganda (UG)"
+  },
+  {
+    "iso": "UA",
+    "nicename": "Ukraine",
+    "phonecode": 380,
+    "title": "🇺🇦 +380 Ukraine (UA)"
+  },
+  {
+    "iso": "AE",
+    "nicename": "United Arab Emirates",
+    "phonecode": 971,
+    "title": "🇦🇪 +971 United Arab Emirates (AE)"
+  },
+  {
+    "iso": "GB",
+    "nicename": "United Kingdom",
+    "phonecode": 44,
+    "title": "🇬🇧 +44 United Kingdom (GB)"
+  },
+  {
+    "iso": "US",
+    "nicename": "United States",
+    "phonecode": 1,
+    "title": "🇺🇸 +1 United States (US)"
+  },
+  {
+    "iso": "UM",
+    "nicename": "United States Minor Outlying Islands",
+    "phonecode": 1,
+    "title": "🇺🇲 +1 United States Minor Outlying Islands (UM)"
+  },
+  {
+    "iso": "UY",
+    "nicename": "Uruguay",
+    "phonecode": 598,
+    "title": "🇺🇾 +598 Uruguay (UY)"
+  },
+  {
+    "iso": "UZ",
+    "nicename": "Uzbekistan",
+    "phonecode": 998,
+    "title": "🇺🇿 +998 Uzbekistan (UZ)"
+  },
+  {
+    "iso": "VU",
+    "nicename": "Vanuatu",
+    "phonecode": 678,
+    "title": "🇻🇺 +678 Vanuatu (VU)"
+  },
+  {
+    "iso": "VE",
+    "nicename": "Venezuela",
+    "phonecode": 58,
+    "title": "🇻🇪 +58 Venezuela (VE)"
+  },
+  {
+    "iso": "VN",
+    "nicename": "Viet Nam",
+    "phonecode": 84,
+    "title": "🇻🇳 +84 Viet Nam (VN)"
+  },
+  {
+    "iso": "VG",
+    "nicename": "Virgin Islands, British",
+    "phonecode": 1284,
+    "title": "🇻🇬 +1284 Virgin Islands, British (VG)"
+  },
+  {
+    "iso": "VI",
+    "nicename": "Virgin Islands, U.s.",
+    "phonecode": 1340,
+    "title": "🇻🇮 +1340 Virgin Islands, U.s. (VI)"
+  },
+  {
+    "iso": "WF",
+    "nicename": "Wallis and Futuna",
+    "phonecode": 681,
+    "title": "🇼🇫 +681 Wallis and Futuna (WF)"
+  },
+  {
+    "iso": "EH",
+    "nicename": "Western Sahara",
+    "phonecode": 212,
+    "title": "🇪🇭 +212 Western Sahara (EH)"
+  },
+  {
+    "iso": "YE",
+    "nicename": "Yemen",
+    "phonecode": 967,
+    "title": "🇾🇪 +967 Yemen (YE)"
+  },
+  {
+    "iso": "ZM",
+    "nicename": "Zambia",
+    "phonecode": 260,
+    "title": "🇿🇲 +260 Zambia (ZM)"
+  },
+  {
+    "iso": "ZW",
+    "nicename": "Zimbabwe",
+    "phonecode": 263,
+    "title": "🇿🇼 +263 Zimbabwe (ZW)"
+  }
+]
