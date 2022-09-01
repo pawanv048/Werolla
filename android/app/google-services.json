@@ -14,11 +14,35 @@
       },
       "oauth_client": [
         {
-          "client_id": "932160520404-v0a8negghensb82lngdq9f22nlngf0pa.apps.googleusercontent.com",
+          "client_id": "932160520404-4v8v72p0v8hgslc266tuubc6onnfiarf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.werollapayment",
+            "certificate_hash": "3b1b7ca9753329fdbf0c852b7ffc16dd8a474b05"
+          }
+        },
+        {
+          "client_id": "932160520404-8i8pao8und15ngrrfmnqc98a6qh7f38e.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.werollapayment",
             "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "932160520404-b62iulg89nmfb9tjv0kt7phliagk3ibk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.werollapayment",
+            "certificate_hash": "b4a78e14d626b6fbb351863e9221cf9025d33255"
+          }
+        },
+        {
+          "client_id": "932160520404-j33vms3vur2pdj07dh6mrqviflf902vf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.werollapayment",
+            "certificate_hash": "2d1ef6f0ddf0419a1bd4b1440108b89d9cef00f3"
           }
         },
         {
@@ -37,6 +61,13 @@
             {
               "client_id": "932160520404-ms7aead7usq1pr1f14sp5ii54fa88jn3.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "932160520404-5rgtifilhkceqgnehjcapheiktk14ucc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.werollaPayment"
+              }
             }
           ]
         }

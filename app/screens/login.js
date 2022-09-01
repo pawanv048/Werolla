@@ -7,6 +7,8 @@ import CheckBox from '@react-native-community/checkbox';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Strings from '../constant/strings';
 import Loader from '../custom/Loader';
+import Toast from 'react-native-simple-toast';
+
 import {
   StyleSheet,
   Text,
@@ -24,12 +26,14 @@ import {
 
 const Login = ({ navigation }) => {
 
-  const [password, setPassword] = useState('');
+  // let uname = localPhoneValue || '';
+  // let upassword = localPasswordValue || '';
+  const [password, setPassword] = useState();
   const [toggleCheckBox, setToggleCheckBox] = useState(false)
   const [loading, setLoading] = useState(false)
   const [inputs, setInputs] = useState({
     phone: '',
-    password: ''
+    password: '',
   })
 
 
@@ -45,13 +49,8 @@ const Login = ({ navigation }) => {
         return response.json();
       }).then((response) => {
         setLoading(false)
-        // setTimeout(() => {
-        //     setLoading(false)
-        // }, 3000)
-        //console.log(response);
         if (response.status) {
           console.log(response.message)
-
           navigation.navigate('home')
         } else {
           console.log(response.message)
@@ -86,34 +85,6 @@ const Login = ({ navigation }) => {
     }
   };
 
-  // const sdfdsfs = () => {
-  //     setLoading(true)
-  //     setTimeout(async() => {
-  //         setLoading(false)
-  //         var form = new FormData();
-
-  //     form.append("PhoneNo", inputs.phone);
-  //     form.append("Password", inputs.password);
-  //         let userData = form;
-  //         //console.log(userData);
-  //         if(userData){
-  //             //userData = JSON.stringify(responseJson.body);
-  //             //userData = JSON.parse(userData);
-  //             //alert(userData); 
-  //             if(inputs.phone == userData.phone && userData.password){
-  //                 AsyncStorage.setItem('user', JSON.stringify({...userData, loadingIn: true}));
-  //                 console.log('navigate to home screen')
-  //             }else{
-  //                 Alert.alert('Error', 'Invalid Details')
-  //             }
-  //         }else{
-  //             Alert.alert('Error', 'User does not exist')
-  //         }
-
-  //     }, 3000)
-  // };
-
-
 
   const [errors, setErrors] = useState({});
 
@@ -121,18 +92,18 @@ const Login = ({ navigation }) => {
   const handleOnChange = (text, input) => {
     setInputs(prevState => ({ ...prevState, [input]: text }));
 
-  }
+  };
 
   // Error Messages
   const handleError = (errorMessage, input) => {
     setErrors(prevState => ({ ...prevState, [input]: errorMessage }));
-  }
+  };
 
   function renderHeader() {
     return (
       <React.Fragment>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity style={{ position: 'absolute', left: 20}}>
             <Image source={icons.back} style={{ width: 20, height: 20, tintColor: 'white' }} resizeMode='contain' />
           </TouchableOpacity>
           <View style={{ flex: 1, alignItems: 'center' }}>
@@ -141,7 +112,7 @@ const Login = ({ navigation }) => {
         </View>
       </React.Fragment>
     )
-  }
+  };
 
   function renderLogin() {
     return (
@@ -191,9 +162,9 @@ const Login = ({ navigation }) => {
                   value={toggleCheckBox}
                   onValueChange={() => setToggleCheckBox(!toggleCheckBox)}
                 />
-                <Text style={styles.termTxt}>{Strings.t4}</Text>
+                <Text style={styles.termTxt}>{Strings.rem}</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('forgetPassword')}>
-                  <Text style={[styles.termTxt, { marginLeft: 110, }]}>{Strings.t5}</Text>
+                  <Text style={[styles.termTxt, { marginLeft: 110, }]}>{Strings.forgot}</Text>
                 </TouchableOpacity>
               </View>
 
@@ -202,9 +173,9 @@ const Login = ({ navigation }) => {
 
               {/* user Login */}
               <View style={{ flexDirection: 'row', marginVertical: 25 }}>
-                <Text style={styles.termTxt}>{Strings.t6}</Text>
+                <Text style={styles.termTxt}>{Strings.dontacc}</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('register')}>
-                  <Text style={[styles.termTxt, { fontWeight: '700' }]}>{Strings.t7}</Text>
+                  <Text style={[styles.termTxt, { fontWeight: '700' }]}>{Strings.reg}</Text>
                 </TouchableOpacity>
               </View>
             </View>
@@ -213,7 +184,7 @@ const Login = ({ navigation }) => {
         </ScrollView>
       </ImageBackground>
     )
-  }
+  };
 
   return (
     <SafeAreaView style={styles.mainContainer}>

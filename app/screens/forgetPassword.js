@@ -17,7 +17,8 @@ import {
   ImageBackground,
   SafeAreaView,
   Keyboard,
-  Dimensions
+  Dimensions,
+  Alert
 } from 'react-native';
 
 const ForgetPassword = ({ navigation }) => {
@@ -36,10 +37,9 @@ const ForgetPassword = ({ navigation }) => {
   //PhoneNo,Password,confirm_Password
 
 
-  const makerequest = async () => {
+  const postDataForgotDetails = async () => {
     setLoading(true)
     var form = new FormData();
-
     form.append("PhoneNo", inputs.phone);
     form.append("Password", inputs.password);
     form.append("confirm_Password", inputs.cmpassword);
@@ -49,10 +49,6 @@ const ForgetPassword = ({ navigation }) => {
             return response.json();
         }).then((response) => {
             setLoading(false)
-            // setTimeout(() => {
-            //     setLoading(false)
-            // }, 3000)
-            //console.log(response);
             if (response.status) {
                 console.log(response.message)
                
@@ -61,7 +57,6 @@ const ForgetPassword = ({ navigation }) => {
                 console.log(response.message)
                 Alert.alert('Error', 'User does not exist')
             }
-
         }).catch((error) => {
             console.log(error)
         })
@@ -111,30 +106,30 @@ const ForgetPassword = ({ navigation }) => {
     }
 
     if (isValid) {
-      forgotPassword();
+      postDataForgotDetails();
     }
   };
 
-  const forgotPassword = () => {
-    //console.log('popup otp screen')
-    //navigation.navigate('home')
-    setLoading(true)
-    setTimeout(() => {
-      setLoading(false)
-      try {
-        makerequest()
-      } catch (error) {
-        Alert.alert('something went wrong')
-      }
-    }, 3000)
-  };
+  // const forgotPassword = () => {
+  //   //console.log('popup otp screen')
+  //   //navigation.navigate('home')
+  //   setLoading(true)
+  //   setTimeout(() => {
+  //     setLoading(false)
+  //     try {
+  //       makerequest()
+  //     } catch (error) {
+  //       Alert.alert('something went wrong')
+  //     }
+  //   }, 3000)
+  // };
 
 
   function renderHeader() {
     return (
       <React.Fragment>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.navigate('login')}>
+          <TouchableOpacity onPress={() => navigation.navigate('login')} style={{ position: 'absolute', left: 20}}>
             <Image source={icons.back} style={{ width: 20, height: 20, tintColor: 'white' }} resizeMode='cover' />
           </TouchableOpacity>
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -168,12 +163,12 @@ const ForgetPassword = ({ navigation }) => {
               />
               {/* New Password */}
               <CustomInput
-                placeholder='password'
+                placeholder='Password'
                 // value={password}
                 onChangeText={text => handleOnChange(text, 'password')}
                 error={errors.password}
                 onFocus={() => {
-                  handleError(null, 'password')
+                  handleError(null, 'Password')
                 }}
                 password
                 secureTextEntry={true}
@@ -181,7 +176,7 @@ const ForgetPassword = ({ navigation }) => {
               {/* Confirm Password number */}
 
               <CustomInput
-                placeholder='confirm password'
+                placeholder='Confirm Password'
                 // value={password}
                 onChangeText={text => handleOnChange(text, 'cmpassword')}
                 error={errors.cmpassword}
@@ -196,7 +191,7 @@ const ForgetPassword = ({ navigation }) => {
                 <CustomButton
                   text="Save Password"
                   //onPress={() => console.log('save button clicked')}
-                  onPress={makerequest}
+                  onPress={validate}
                 />
               </View>
             </View>
