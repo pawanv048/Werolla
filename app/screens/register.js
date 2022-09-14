@@ -12,7 +12,7 @@ import auth from '@react-native-firebase/auth';
 // import firebase from '@react-native-firebase/app';
 // import OtpAutoFillViewManager from 'react-native-otp-auto-fill';
 // import OTPInputView from '@twotalltotems/react-native-otp-input';
-// import RNOtpVerify from 'react-native-otp-verify';
+import RNOtpVerify from 'react-native-otp-verify';
 import { COLORS, SIZES } from '../constant/theme';
 import OTPTextInput from 'react-native-otp-textinput';
 // import OtpAutocomplete from 'react-native-otp-autocomplete';
@@ -33,22 +33,22 @@ import {
    TouchableWithoutFeedback,
    ToastAndroid,
    Button,
-
+   KeyboardAvoidingView,
+   
 } from 'react-native';
 import Toast from 'react-native-simple-toast';
 
 
-
 const Register = ({ navigation }) => {
+
    // check box with privacy&policy
    const [toggleCheckBox, setToggleCheckBox] = useState(false);
-
    const [loading, setLoading] = useState(false);
-
    const [initializing, setInitializing] = useState(true);
-   const [user, setUser] = useState();
+   const [user, setUser] = useState('');
    const [confirm, setConfirm] = useState(null); // if null mean no otp message send
    const [code, setCode] = useState('');
+   
 
    const [inputs, setInputs] = useState({
       yourName: '',
@@ -64,19 +64,16 @@ const Register = ({ navigation }) => {
       title: '🇮🇳 +91 India (IN)',
    });
 
-   // Handle the button press
+   //Method to sign in with phone number
    async function signInWithPhoneNumber(phoneNumber) {
-
       await auth()
          .signInWithPhoneNumber(phoneNumber)
+        // .onAuthStateChanged()
          .then(res => {
             setConfirm(res);
             console.log(res);
             setLoading(false);
             setModelVisible(true);
-            // setTimeout(() => {
-            //    setModelVisible(true); 
-            // }, 500);
          })
          .catch(e => {
             setLoading(false);
@@ -91,7 +88,8 @@ const Register = ({ navigation }) => {
          console.log('Invalid code.');
          throw new Error(error);
       }
-   }
+   };
+  
 
    const verifyOtp = () => {
       confirmCode()
@@ -100,10 +98,10 @@ const Register = ({ navigation }) => {
             setModelVisible(false);
             setShowSuccessModel(true);
             // setTimeout(() => {
-               
             // }, 1000);
          })
          .catch(e => Alert.alert('Error', e.message));
+        // .catch(e => Alert.alert('Error', 'Please input valid otp'));
    };
 
    // Handle user state changes
@@ -185,8 +183,6 @@ const Register = ({ navigation }) => {
    //     }
    //   }
 
-
-
    const postDataUserDetail = async () => {
       const formData = new FormData();
       formData.append('UserName', inputs.yourName);
@@ -201,27 +197,21 @@ const Register = ({ navigation }) => {
       // console.log('here1');
       await fetch('https://moduleszone.com/API/User/signup.php', {
          method: 'POST',
+         params: {
+            key: 'AIzaSyAlASCFOGJwxHctOvcL90KiG084rrGzLVk'     
+         },
          body: formData,
       })
          .then(response => {
             return response.json();
          })
          .then(response => {
-            console.log('here2');
+            console.log(response.formData);
             // setLoading(false);
-            
-            if (response.status) {
-               // navigation.navigate('login')
-               // setModelVisible(true);
-               // if (!confirm) {
-               //console.log(inputs.phone)
-               //verifyPhoneNumber('+91' + inputs.phone)
-               // verifyPhoneNumber(`+91${inputs.phone}`);
-               
 
+            if (response.status) {
+               
                signInWithPhoneNumber(`+${selectedCountry?.phonecode} ${inputs.phone}`);
-               // }
-               console.log('Registration Successful. Please Login to proceed');
             } else {
                setLoading(false);
                Alert.alert('Error', response.message);
@@ -269,7 +259,7 @@ const Register = ({ navigation }) => {
          isValid = false;
       }
       if (isValid) {
-         try {
+         try {  
             postDataUserDetail();
          } catch (error) {
             console.log(error)
@@ -296,7 +286,7 @@ const Register = ({ navigation }) => {
          <React.Fragment>
             <View style={styles.header}>
                <TouchableOpacity onPress={() => navigation.goBack()}
-                  style={{ position: 'absolute', left: 20 }}
+                  style={{ position: 'absolute', left: 20}}
                >
                   <Image
                      source={icons.back}
@@ -320,6 +310,7 @@ const Register = ({ navigation }) => {
             style={{ height: Dimensions.get('window').height, flex: 1 }}
             resizeMode="cover">
             <ScrollView
+               keyboardShouldPersistTaps="handled"
                contentContainerStyle={{ paddingBottom: 5 }}
                showsVerticalScrollIndicator={false}>
                <View>
@@ -417,11 +408,13 @@ const Register = ({ navigation }) => {
    const [modelVisible, setModelVisible] = useState(false);
    const [codeArr, setCodeArr] = useState([]);
 
+
    function renderOtpModel() {
 
-      // OtpAutocomplete.getHash()
-      //       .then(console.log)
-      //       .catch(console.log);
+      // getHash = () =>
+      // RNOtpVerify.getHash()
+      // .then(console.log)
+      // .catch(console.log);
 
       // const startListeningForOtp = () =>
       //    OtpAutocomplete.getOtp()
@@ -489,14 +482,13 @@ const Register = ({ navigation }) => {
                         <OTPTextInput
                            inputCount={6}
                            Value={code}
-                           // onChange={(e, index) => handleSendCode(e, index)}
-                           // defaultValue={codeArr}
+                          
                            handleTextChange={e => {
                               try {
                                  setCode(e);
                                  console.log('code=', e);
                               } catch (error) {
-                                 // console.log(error)
+                                 
                                  Alert.alert('something wrong')
                               }
 
@@ -588,7 +580,6 @@ const Register = ({ navigation }) => {
                            style={{
                               color: 'black',
                               fontWeight: '600',
-                              
                            }}>
                            Login
                         </Text>
@@ -601,13 +592,18 @@ const Register = ({ navigation }) => {
    };
 
    return (
-      <SafeAreaView style={{ flex: 1 }}>
-         <Loader visible={loading} />
-         {renderHeader()}
-         {renderRegisterForm()}
-         {renderOtpModel()}
-         {renderSuccessModel()}
-      </SafeAreaView>
+      <KeyboardAvoidingView
+         behavior={Platform.OS === "ios" ? "padding" : null}
+         style={{ flex: 1 }}
+      >
+         <SafeAreaView style={{ flex: 1 }}>
+            <Loader visible={loading} />
+            {renderHeader()}
+            {renderRegisterForm()}
+            {renderOtpModel()}
+            {renderSuccessModel()}
+         </SafeAreaView>
+      </KeyboardAvoidingView>
    );
 };
 

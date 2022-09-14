@@ -153,6 +153,7 @@ const CustomInput = props => {
 
    return (
       <View
+      
          style={[
             styles.container,
             {
@@ -196,7 +197,7 @@ const CustomInput = props => {
                {...props.inputProps}
             />
          </View >
-         <View style={{  position: 'absolute', top: 50}}>
+         <View style={{ position: 'absolute', top: 50 }}>
             {error && (
                <Text style={{ color: 'red', marginTop: 5, fontSize: 12 }}>{error}</Text>
             )}
@@ -219,7 +220,11 @@ const styles = StyleSheet.create({
 
       // justifyContent: Platform.OS === 'ios' ? 'center' : 'flex-start',
    },
-   input: { fontSize: 14, padding: 0, margin: 0 },
+   input: {
+      fontSize: 14,
+      padding: 0,
+      margin: 0
+   },
 });
 
 export default CustomInput;
@@ -228,7 +233,7 @@ const OptionTitle = ({ data }) => {
    return (
       <View
          style={{
-            height: 35,
+            height: 30,
             alignContent: 'center',
             display: 'flex',
             flexDirection: 'row',

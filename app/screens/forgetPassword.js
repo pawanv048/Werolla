@@ -18,7 +18,8 @@ import {
   SafeAreaView,
   Keyboard,
   Dimensions,
-  Alert
+  Alert,
+  KeyboardAvoidingView
 } from 'react-native';
 
 const ForgetPassword = ({ navigation }) => {
@@ -32,9 +33,9 @@ const ForgetPassword = ({ navigation }) => {
     cmpassword: ''
   });
 
-
-  //https://moduleszone.com/API/User/forgot_password.php
-  //PhoneNo,Password,confirm_Password
+// oduleszone.com/API/User/forgot_password.php
+//   //PhoneNo,Password,confirm_Password
+//   //https://m
 
 
   const postDataForgotDetails = async () => {
@@ -43,24 +44,24 @@ const ForgetPassword = ({ navigation }) => {
     form.append("PhoneNo", inputs.phone);
     form.append("Password", inputs.password);
     form.append("confirm_Password", inputs.cmpassword);
-   
+
     await fetch('https://moduleszone.com/API/User/forgot_password.php', { method: 'POST', body: form })
-        .then((response) => {
-            return response.json();
-        }).then((response) => {
-            setLoading(false)
-            if (response.status) {
-                console.log(response.message)
-               
-                navigation.navigate('home')
-            } else {
-                console.log(response.message)
-                Alert.alert('Error', 'User does not exist')
-            }
-        }).catch((error) => {
-            console.log(error)
-        })
-};
+      .then((response) => {
+        return response.json();
+      }).then((response) => {
+        setLoading(false)
+        if (response.status) {
+          console.log(response.message)
+
+          navigation.navigate('home')
+        } else {
+          console.log(response.message)
+          Alert.alert('Error', 'User does not exist')
+        }
+      }).catch((error) => {
+        console.log(error)
+      })
+  };
 
   const [errors, setErrors] = useState({});
 
@@ -93,14 +94,13 @@ const ForgetPassword = ({ navigation }) => {
       handleError('Min password length of 7', 'password');
       isValid = false;
     }
-
     if (!inputs.cmpassword) {
       handleError('Please input confirm password', 'cmpassword');
       isValid = false;
     } else if (inputs.cmpassword.length < 7) {
       handleError('Min confirm password length of 7', 'cmpassword');
       isValid = false;
-    } else if(inputs.password === inputs.cmpassword){
+    } else if (!inputs.password === inputs.cmpassword) {
       handleError('Password and Confirm password are not same')
       isValid = false;
     }
@@ -110,26 +110,12 @@ const ForgetPassword = ({ navigation }) => {
     }
   };
 
-  // const forgotPassword = () => {
-  //   //console.log('popup otp screen')
-  //   //navigation.navigate('home')
-  //   setLoading(true)
-  //   setTimeout(() => {
-  //     setLoading(false)
-  //     try {
-  //       makerequest()
-  //     } catch (error) {
-  //       Alert.alert('something went wrong')
-  //     }
-  //   }, 3000)
-  // };
-
 
   function renderHeader() {
     return (
       <React.Fragment>
         <View style={styles.header}>
-          <TouchableOpacity onPress={() => navigation.navigate('login')} style={{ position: 'absolute', left: 20}}>
+          <TouchableOpacity onPress={() => navigation.navigate('login')} style={{ position: 'absolute', left: 20 }}>
             <Image source={icons.back} style={{ width: 20, height: 20, tintColor: 'white' }} resizeMode='cover' />
           </TouchableOpacity>
           <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
@@ -203,11 +189,16 @@ const ForgetPassword = ({ navigation }) => {
   }
 
   return (
-    <SafeAreaView style={styles.mainContainer}>
-      <Loader visible={loading} />
-      {renderHeader()}
-      {renderForgetScreen()}
-    </SafeAreaView>
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : null}
+      style={{ flex: 1 }}
+    >
+      <SafeAreaView style={styles.mainContainer}>
+        <Loader visible={loading} />
+        {renderHeader()}
+        {renderForgetScreen()}
+      </SafeAreaView>
+    </KeyboardAvoidingView>
   )
 }
 

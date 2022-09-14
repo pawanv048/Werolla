@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:932160520404:android:14633678da14c3d239fb41",
+        "mobilesdk_app_id": "1:932160520404:android:456104cd03c70fec39fb41",
         "android_client_info": {
           "package_name": "com.werollapayment"
         }
@@ -27,22 +27,6 @@
           "android_info": {
             "package_name": "com.werollapayment",
             "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
-          }
-        },
-        {
-          "client_id": "932160520404-b62iulg89nmfb9tjv0kt7phliagk3ibk.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.werollapayment",
-            "certificate_hash": "b4a78e14d626b6fbb351863e9221cf9025d33255"
-          }
-        },
-        {
-          "client_id": "932160520404-j33vms3vur2pdj07dh6mrqviflf902vf.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.werollapayment",
-            "certificate_hash": "2d1ef6f0ddf0419a1bd4b1440108b89d9cef00f3"
           }
         },
         {

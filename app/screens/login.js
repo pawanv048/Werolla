@@ -20,7 +20,9 @@ import {
   SafeAreaView,
   Keyboard,
   Alert,
-  Dimensions
+  Dimensions,
+  Button,
+  Linking
 } from 'react-native';
 
 
@@ -40,7 +42,6 @@ const Login = ({ navigation }) => {
   const login = async () => {
     setLoading(true)
     var form = new FormData();
-
     form.append("PhoneNo", inputs.phone);
     form.append("Password", inputs.password);
 
@@ -50,7 +51,8 @@ const Login = ({ navigation }) => {
       }).then((response) => {
         setLoading(false)
         if (response.status) {
-          console.log(response.message)
+          //signInWithPhoneNumber(`+${selectedCountry?.phonecode} ${inputs.phone}`)
+          //console.log(response.message)
           navigation.navigate('home')
         } else {
           console.log(response.message)
@@ -126,7 +128,7 @@ const Login = ({ navigation }) => {
                 style={styles.dollerImg}
               />
 
-
+              
               {/* Phone number */}
               <CustomInput
                 placeholder='Phone Number'
@@ -171,12 +173,14 @@ const Login = ({ navigation }) => {
               {/* LoginButton */}
               <CustomButton text="Login" onPress={validate} />
 
+             
               {/* user Login */}
               <View style={{ flexDirection: 'row', marginVertical: 25 }}>
                 <Text style={styles.termTxt}>{Strings.dontacc}</Text>
-                <TouchableOpacity onPress={() => navigation.navigate('register')}>
+                <TouchableOpacity onPress={() => navigation.navigate('home')}>
                   <Text style={[styles.termTxt, { fontWeight: '700' }]}>{Strings.reg}</Text>
                 </TouchableOpacity>
+                
               </View>
             </View>
 
