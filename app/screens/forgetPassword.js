@@ -68,9 +68,7 @@ const ForgetPassword = ({ navigation }) => {
   //handle user change inputs
   const handleOnChange = (text, input) => {
     setInputs(prevState => ({ ...prevState, [input]: text }));
-
   }
-
   // Error Messages
   const handleError = (errorMessage, input) => {
     setErrors(prevState => ({ ...prevState, [input]: errorMessage }));
@@ -86,7 +84,6 @@ const ForgetPassword = ({ navigation }) => {
       handleError('Please input phone number', 'phone');
       isValid = false;
     }
-
     if (!inputs.password) {
       handleError('Please input password', 'password');
       isValid = false;
@@ -138,7 +135,9 @@ const ForgetPassword = ({ navigation }) => {
               <Image source={images.doller}
                 style={styles.dollerImg}
               />
+
               {/* Phone number */}
+
               <CustomInput placeholder='Phone number'
                 keyboardType="default"
                 onChangeText={text => handleOnChange(text, 'phone')}
@@ -147,7 +146,9 @@ const ForgetPassword = ({ navigation }) => {
                   handleError(null, 'phone')
                 }}
               />
+
               {/* New Password */}
+
               <CustomInput
                 placeholder='Password'
                 // value={password}
@@ -159,6 +160,7 @@ const ForgetPassword = ({ navigation }) => {
                 password
                 secureTextEntry={true}
               />
+
               {/* Confirm Password number */}
 
               <CustomInput
@@ -172,7 +174,7 @@ const ForgetPassword = ({ navigation }) => {
                 cmpassword
                 secureTextEntry={true}
               />
-              {/* SaveButton */}
+              {/* SaveButton */}   
               <View style={styles.savePasswordBtn}>
                 <CustomButton
                   text="Save Password"
@@ -220,7 +222,6 @@ const styles = StyleSheet.create({
     color: 'white',
     fontSize: 20,
     fontWeight: '400',
-
     //marginLeft: 95
   },
   dollerImg: {

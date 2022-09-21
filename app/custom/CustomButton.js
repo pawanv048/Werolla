@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, Pressable, TouchableOpacity } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
 
 const CustomButton = ({ onPress, text, type = 'PRIMARY', bgColor, fgColor, disabled, showOTP }) => {

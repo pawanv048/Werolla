@@ -68,12 +68,10 @@ const Login = ({ navigation }) => {
   const validate = () => {
     Keyboard.dismiss();
     let isValid = true;
-
     if (!inputs.phone) {
       handleError('Please input phone number', 'phone');
       isValid = false;
     }
-
     if (!inputs.password) {
       handleError('Please input password', 'password');
       isValid = false;
@@ -93,7 +91,6 @@ const Login = ({ navigation }) => {
   //handle user change inputs
   const handleOnChange = (text, input) => {
     setInputs(prevState => ({ ...prevState, [input]: text }));
-
   };
 
   // Error Messages
@@ -179,11 +176,9 @@ const Login = ({ navigation }) => {
                 <Text style={styles.termTxt}>{Strings.dontacc}</Text>
                 <TouchableOpacity onPress={() => navigation.navigate('home')}>
                   <Text style={[styles.termTxt, { fontWeight: '700' }]}>{Strings.reg}</Text>
-                </TouchableOpacity>
-                
+                </TouchableOpacity>   
               </View>
             </View>
-
           </View>
         </ScrollView>
       </ImageBackground>
@@ -192,7 +187,7 @@ const Login = ({ navigation }) => {
 
   return (
     <SafeAreaView style={styles.mainContainer}>
-      <Loader visible={loading} />
+      <Loader visible={loading}/>
       {renderHeader()}
       {renderLogin()}
     </SafeAreaView>
@@ -220,13 +215,11 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     paddingLeft: -15,
     alignSelf: 'center'
-    //marginLeft: 130
   },
   dollerImg: {
     width: '65%',
     height: 150,
-    marginVertical: 40
-    //alignSelf: 'center',
+    marginVertical: 40 
   },
   termTxt: {
     color: '#162972',

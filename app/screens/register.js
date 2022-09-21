@@ -270,7 +270,7 @@ const Register = ({ navigation }) => {
 
    const [errors, setErrors] = useState({});
 
-   //handle user change inputs
+   // handle user change inputs
    const handleOnChange = (text, input) => {
       setInputs(prevState => ({ ...prevState, [input]: text }));
    };
@@ -280,7 +280,7 @@ const Register = ({ navigation }) => {
       setErrors(prevState => ({ ...prevState, [input]: errorMessage }));
    };
 
-   //
+   // 
    function renderHeader() {
       return (
          <React.Fragment>
@@ -362,6 +362,7 @@ const Register = ({ navigation }) => {
                      />
 
                      {/* Terms and conditions */}
+                     
                      <View
                         style={{
                            flexDirection: 'row',
@@ -402,7 +403,7 @@ const Register = ({ navigation }) => {
             </ScrollView>
          </ImageBackground>
       );
-   }
+   };
 
    // Show otp varification model
    const [modelVisible, setModelVisible] = useState(false);
