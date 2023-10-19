@@ -13,9 +13,11 @@ import {
   FlatList,
   TouchableOpacity,
   Image,
-  TouchableWithoutFeedback
+  TouchableWithoutFeedback,
+  ImageBackground
 } from 'react-native';
 import { COLORS, SIZES } from '../constant/theme';
+import { useNavigation } from '@react-navigation/native';
 
 
 const { width: WINDOW_WIDTH, height: WINDOW_HEIGHT } = Dimensions.get('window')
@@ -24,13 +26,14 @@ const BOTTOM_SHEET_MIN_HEIGHT = WINDOW_HEIGHT * 0.3;
 const MAX_UPWORD_TRANSLATE_Y = BOTTOM_SHEET_MIN_HEIGHT - BOTTOM_SHEET_MAX_HEIGHT; //navigation number
 const MAX_DOWNWORD_TRANSLATE_Y = 0;
 
+
 const transactionHistory = [
   {
     id: 1,
     nicename: "Cassius Stuart",
     date: "March20, 2022",
     amount: "+$7000",
-    img: icons.wallet
+    img: icons.wallet,
   },
   {
     id: 2,
@@ -44,11 +47,22 @@ const transactionHistory = [
     nicename: "Cassius Stuart",
     date: "March20, 2022",
     amount: "+$7000",
-    img: icons.wallet
+    img: icons.wallet,
+    
   }
 ];
 
-const Home = ({ navigation }) => {
+const Home = () => {
+
+  const navigation = useNavigation();
+
+  const onNotificationPressed = () => {
+    navigation.navigate('notification')
+  }
+
+  const onSearchPressed = () => {
+    navigation.navigate('features')
+  }
 
 //MARK: Slide sheet
 
@@ -168,6 +182,7 @@ const Home = ({ navigation }) => {
           </Text>
         </View>
         <TouchableOpacity
+        onPress={onSearchPressed}
           style={{
             width: 40,
             paddingRight: SIZES.padding * 2,
@@ -190,7 +205,7 @@ const Home = ({ navigation }) => {
             paddingRight: SIZES.padding * 2,
             justifyContent: 'center'
           }}
-          onPress={() => navigation.navigate('notification')}
+          onPress={onNotificationPressed}
         >
           <Image
             source={icons.notification}
@@ -221,7 +236,8 @@ const Home = ({ navigation }) => {
             resizeMode='contain'
             style={{
               width: WINDOW_WIDTH * 0.5,
-              height: WINDOW_HEIGHT * 0.18
+              height: WINDOW_HEIGHT * 0.18,
+              
             }}
           />
         </TouchableWithoutFeedback>
@@ -236,14 +252,16 @@ const Home = ({ navigation }) => {
   // MARK: Render Home screen
 
   return (
+    
     <View style={styles.mainContainer}>
-
+      
       {/* user profile */}
-
+     
       {renderHeader()}
       {renderCurrentBalance()}
       {/* service profile */}
-
+      
+      
       <View style={styles.footer}>
         <View style={styles.dragArea}>
           <View style={styles.dragHandler} />
@@ -252,9 +270,13 @@ const Home = ({ navigation }) => {
         <View style={{
           flexDirection: 'row',
           flexWrap: 'wrap',
+          //marginHorizontal: 10,
+          //paddingVertical: 10,
+          //backgroundColor: 'red'
           //alignContent: 'center'
         }}>
           <ServiceButton
+            
             source={icons.deposit}
             text='Deposit'
             onPress={() => console.log('service button pressed')}
@@ -262,7 +284,7 @@ const Home = ({ navigation }) => {
           <ServiceButton
             source={icons.send}
             text='Send'
-            onPress={() => console.log('service button pressed')}
+            onPress={() => navigation.navigate('sendMoney')}
           />
           <ServiceButton
             source={icons.switcharrow}
@@ -277,7 +299,7 @@ const Home = ({ navigation }) => {
           <ServiceButton
             source={icons.bill}
             text='Pay Bills'
-            onPress={() => console.log('service button pressed')}
+            onPress={() => navigation.navigate('paybill')}
           />
           <ServiceButton
             source={icons.scan}
@@ -286,7 +308,7 @@ const Home = ({ navigation }) => {
           />
           <ServiceButton
             source={icons.mobilepay}
-            text='Mobile Prepaid'
+            text="Mobile Prepaid"
             onPress={() => console.log('service button pressed')}
           />
           <ServiceButton
@@ -301,7 +323,7 @@ const Home = ({ navigation }) => {
           />
         </View>
       </View>
-
+     
       {/* Transition History */}
 
       <Animated.View style={[styles.bottomSheet, bottomSheetAnimation]}>
@@ -309,7 +331,7 @@ const Home = ({ navigation }) => {
           <View style={styles.dragHandler} />
         </View>
         {renderTransactionHistory()}
-      </Animated.View>
+      </Animated.View> 
     </View>
   )
 };

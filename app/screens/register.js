@@ -34,7 +34,6 @@ import {
    ToastAndroid,
    Button,
    KeyboardAvoidingView,
-   
 } from 'react-native';
 import Toast from 'react-native-simple-toast';
 
@@ -48,7 +47,7 @@ const Register = ({ navigation }) => {
    const [user, setUser] = useState('');
    const [confirm, setConfirm] = useState(null); // if null mean no otp message send
    const [code, setCode] = useState('');
-   
+
 
    const [inputs, setInputs] = useState({
       yourName: '',
@@ -68,7 +67,7 @@ const Register = ({ navigation }) => {
    async function signInWithPhoneNumber(phoneNumber) {
       await auth()
          .signInWithPhoneNumber(phoneNumber)
-        // .onAuthStateChanged()
+         // .onAuthStateChanged()
          .then(res => {
             setConfirm(res);
             console.log(res);
@@ -89,99 +88,19 @@ const Register = ({ navigation }) => {
          throw new Error(error);
       }
    };
-  
+
 
    const verifyOtp = () => {
       confirmCode()
          .then(() => {
-            // Alert.alert('Success', 'Otp Verified!'); // Navigate to Home Page here
             setModelVisible(false);
             setShowSuccessModel(true);
             // setTimeout(() => {
             // }, 1000);
          })
          .catch(e => Alert.alert('Error', e.message));
-        // .catch(e => Alert.alert('Error', 'Please input valid otp'));
+
    };
-
-   // Handle user state changes
-   // function onAuthStateChanged(user) {
-   //   setUser(inputs.phone);
-   //   console.log(inputs.phone);
-   //   if (initializing) setInitializing(false);
-   // }
-
-   // useEffect(() => {
-   //   const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-   //   return subscriber; // unsubscribe on unmount
-   // }, []);
-
-   // // Handle create account button press
-   // async function createAccount() {
-   //   try {
-   //     await auth().createUserWithEmailAndPassword(
-   //       'r@yopmail.com',
-   //       inputs?.password,
-   //     );
-   //     console.log('User account created & signed in!');
-   //   } catch (error) {
-   //     if (error.code === 'auth/email-already-in-use') {
-   //       console.log('That email address is already in use!');
-   //     }
-
-   //     if (error.code === 'auth/invalid-email') {
-   //       console.log('That email address is invalid!');
-   //     }
-   //     console.error('createAccount ERROR: ', error);
-   //   }
-   // }
-
-   // // Handle the verify phone button press
-   // async function verifyPhoneNumber(phoneNumber) {
-   //   try {
-   //     console.log('ConfirmCode');
-   //     // const confirmation = await auth().signInWithPhoneNumber(phoneNumber);
-   //     //const confirmation = await auth().verifyPhoneNumber(phoneNumber);
-   //     const confirmation = await auth().verifyPhoneNumber(phoneNumber);
-   //     setConfirm(confirmation);
-   //     console.log('ConfirmCode :' + confirmation);
-   //     setConfirm(confirmation);
-   //   } catch (error) {
-   //     alert(error);
-   //   }
-   // }
-
-   // // Handle confirm code button press
-   // async function confirmCode() {
-   //   console.log('confirm=', confirm);
-   //   try {
-   //     // console.log(code.code)
-   //     // code='801251';
-   //     console.log(ref);
-   //     const check = await confirm.con(code);
-   //     console.log(ref);
-   //     console.log(check);
-   //   } catch (error) {
-   //     console.log('Invalid code.');
-   //   }
-   // }
-
-   //   async function confirmCode() {
-   //     try {
-   //       const credential = auth.PhoneAuthProvider.credential(
-   //         confirm.verificationId,
-   //         code,
-   //       );
-   //       let userData = await auth().currentUser.linkWithCredential(credential);
-   //       setUser(userData.user);
-   //     } catch (error) {
-   //       if (error.code == 'auth/invalid-verification-code') {
-   //         console.log('Invalid code.');
-   //       } else {
-   //         console.log('Account linking error');
-   //       }
-   //     }
-   //   }
 
    const postDataUserDetail = async () => {
       const formData = new FormData();
@@ -198,7 +117,7 @@ const Register = ({ navigation }) => {
       await fetch('https://moduleszone.com/API/User/signup.php', {
          method: 'POST',
          params: {
-            key: 'AIzaSyAlASCFOGJwxHctOvcL90KiG084rrGzLVk'     
+            key: 'AIzaSyAlASCFOGJwxHctOvcL90KiG084rrGzLVk'
          },
          body: formData,
       })
@@ -210,7 +129,7 @@ const Register = ({ navigation }) => {
             // setLoading(false);
 
             if (response.status) {
-               
+
                signInWithPhoneNumber(`+${selectedCountry?.phonecode} ${inputs.phone}`);
             } else {
                setLoading(false);
@@ -259,7 +178,7 @@ const Register = ({ navigation }) => {
          isValid = false;
       }
       if (isValid) {
-         try {  
+         try {
             postDataUserDetail();
          } catch (error) {
             console.log(error)
@@ -286,7 +205,7 @@ const Register = ({ navigation }) => {
          <React.Fragment>
             <View style={styles.header}>
                <TouchableOpacity onPress={() => navigation.goBack()}
-                  style={{ position: 'absolute', left: 20}}
+                  style={{ position: 'absolute', left: 20 }}
                >
                   <Image
                      source={icons.back}
@@ -362,7 +281,7 @@ const Register = ({ navigation }) => {
                      />
 
                      {/* Terms and conditions */}
-                     
+
                      <View
                         style={{
                            flexDirection: 'row',
@@ -411,28 +330,6 @@ const Register = ({ navigation }) => {
 
 
    function renderOtpModel() {
-
-      // getHash = () =>
-      // RNOtpVerify.getHash()
-      // .then(console.log)
-      // .catch(console.log);
-
-      // const startListeningForOtp = () =>
-      //    OtpAutocomplete.getOtp()
-      //       .then(p => OtpAutocomplete.addListener(otpHandler))
-      //       .catch(p => console.log(p));
-
-      // const otpHandler = (message) => {
-      //    const otp = /(\d{4})/g.exec(message)[1];
-      //    setOtpPhone({ otp });
-      //    OtpAutocomplete.removeListener();
-      //    Keyboard.dismiss();
-      // }
-
-      // useEffect(() => {
-      //    startListeningForOtp();
-      //    return () => OtpAutocomplete.removeListener();
-      // }, [startListeningForOtp]);
 
       return (
          <Modal animationType="slide" transparent={true} visible={modelVisible}>
@@ -483,13 +380,13 @@ const Register = ({ navigation }) => {
                         <OTPTextInput
                            inputCount={6}
                            Value={code}
-                          
+
                            handleTextChange={e => {
                               try {
                                  setCode(e);
                                  console.log('code=', e);
                               } catch (error) {
-                                 
+
                                  Alert.alert('something wrong')
                               }
 

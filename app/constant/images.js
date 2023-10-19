@@ -4,7 +4,8 @@ const verify = require('assets/images/verify.png');
 const success = require('assets/images/success.png');
 const profile = require('assets/images/profile.png');
 const tag = require('assets/images/tag.png');
-
+const homebackground = require('assets/images/homebackground.jpg');
+const textimg = require('assets/images/textimg.jpeg');
 
 export default {
   backgroundImag,
@@ -12,5 +13,7 @@ export default {
   verify,
   success,
   profile,
-  tag
+  tag,
+  homebackground,
+  textimg
 };

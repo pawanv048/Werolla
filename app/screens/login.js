@@ -50,7 +50,8 @@ const Login = ({ navigation }) => {
         return response.json();
       }).then((response) => {
         setLoading(false)
-        if (response.status) {
+        console.log('status=>>',response.status)
+        if (response.status == true) {
           //signInWithPhoneNumber(`+${selectedCountry?.phonecode} ${inputs.phone}`)
           //console.log(response.message)
           navigation.navigate('home')
@@ -174,7 +175,7 @@ const Login = ({ navigation }) => {
               {/* user Login */}
               <View style={{ flexDirection: 'row', marginVertical: 25 }}>
                 <Text style={styles.termTxt}>{Strings.dontacc}</Text>
-                <TouchableOpacity onPress={() => navigation.navigate('home')}>
+                <TouchableOpacity onPress={() => navigation.navigate('register')}>
                   <Text style={[styles.termTxt, { fontWeight: '700' }]}>{Strings.reg}</Text>
                 </TouchableOpacity>   
               </View>

@@ -32,7 +32,6 @@ const CustomInput = props => {
 
    const [isFocus, setIsFocus] = React.useState(false);
    const [showPhoneModal, setShowPhoneModal] = React.useState(false);
-   //   const [strings] = useStrings(); //
    const [data, setData] = useState(Countries);
    const [search, setSearch] = useState('');
 
